@@ -1,12 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: "Inter", sans-serif;
+    color: #3C4043;
+    box-sizing: border-box;
+}
+
+.link {
+    font-size: 14px;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 img {
-    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 16px;
 }
 
 .navbar {
@@ -17,11 +38,21 @@ img {
     size: 8px;
 }
 
-.search {
+.container {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content:space-between;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;    
+    height: 80vh;            /* take full viewport height */
+    text-align: center;       /* center inline content like the image */
+}
+
+.search {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 688px;
+    padding-top: 6px;
+    position: relative;
 }
 
 .searchbar {
@@ -35,20 +66,24 @@ img {
     border-radius: 26px;
     padding: 16px;
     margin: 0 auto;
+    width: 100%;
 }
 
-.search-btn {
+.btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
     padding: 16px 24px;
+    margin-top: 32px;
     border: none;
-    color: F8F9FA;
-    border-radius: 16px;
+    color: #3C4043;
+    background-color: #F8F9FA;
+    border-radius: 10px;
     size: 32px;
-
 }
 
-.img-search {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.btn:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0px 3px 5px 0px rgba(31, 31, 31, 0.08);
 }
+
 

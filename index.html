@@ -5,14 +5,19 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        
         <div class="navbar">
-            <a href="image.html">Images</a>
-            <a href="advanced.html">Advanced Search</a>
+            <a class="link" href="image.html">Images</a>
+            <a class="link" href="advanced.html">Advanced Search</a>
         </div>
-        <form action="https://www.google.com/search">
-            <input class="searchbar" type="text" name="q">
-            <input class="search-btn" type="submit" value="Google Search">
-        </form>
 
+        <div class="container">
+            <img class="logo" src="img/google.png" alt="google">
+            <form class="search" action="https://www.google.com/search">
+                <input class="searchbar" type="text" name="q">
+                <input class="btn" type="submit" value="Google Search">
+                <input class="btn" type="submit" value="I'm Feeling Lucky">
+            </form>
+        </div>
     </body>
 </html>
